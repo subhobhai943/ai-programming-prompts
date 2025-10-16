@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "title": "Comprehensive AI Programming Prompt Library",
+    "description": "A to Z collection of AI prompts for programming tasks, compatible with ChatGPT, Claude, Grok, DeepSeek, and other AI models",
+    "version": "1.0.0",
+    "author": "Subhobhai",
+    "license": "MIT",
+    "created": "2025-10-16",
+    "last_updated": "2025-10-16",
+    "total_categories": 15,
+    "total_prompts": 22
+  },
+  "categories": {
+    "algorithms": "Algorithm implementation and optimization prompts",
+    "api_development": "API design and integration prompts",
+    "architecture": "System design and architecture prompts",
+    "code_generation": "Prompts for generating new code from specifications",
+    "code_review": "Prompts for reviewing and analyzing code quality",
+    "database": "Database design and optimization prompts",
+    "debugging": "Prompts for identifying and fixing code issues",
+    "deployment": "Deployment and DevOps automation prompts",
+    "documentation": "Code documentation generation prompts",
+    "frameworks": "Framework-specific programming prompts",
+    "learning": "Prompts for understanding programming concepts",
+    "performance": "Prompts for performance optimization",
+    "refactoring": "Code refactoring and modernization prompts",
+    "security": "Security analysis and secure coding prompts",
+    "testing": "Test generation and validation prompts"
+  },
+  "prompts": {
+    "algorithms": {
+      "algorithm_implementation": {
+        "title": "Algorithm Implementation and Optimization",
+        "description": "Implement and optimize algorithms for specific problems",
+        "prompt": "You are an algorithms expert with deep knowledge of {language}. Help me implement {algorithm_type} for {problem_description}.\n\nProblem requirements:\n- Input constraints: {input_constraints}\n- Output requirements: {output_requirements}\n- Performance targets: {performance_targets}\n- Memory limitations: {memory_constraints}\n- Special considerations: {special_requirements}\n\nAlgorithm analysis:\n1. **Problem Analysis:**\n   - Problem decomposition\n   - Constraint analysis\n   - Edge case identification\n   - Complexity requirements\n\n2. **Algorithm Design:**\n   - Algorithm selection rationale\n   - Step-by-step approach\n   - Data structure choices\n   - Optimization opportunities\n\n3. **Implementation:**\n   - Complete {language} implementation\n   - Detailed code comments\n   - Variable naming clarity\n   - Modular design approach\n\n4. **Optimization:**\n   - Time complexity analysis\n   - Space complexity evaluation\n   - Performance optimization techniques\n   - Alternative approaches comparison\n\n5. **Testing:**\n   - Test case design\n   - Edge case validation\n   - Performance benchmarking\n   - Correctness verification\n\nProvide:\n- Multiple algorithm approaches with trade-offs\n- Optimized implementation with complexity analysis\n- Comprehensive test cases\n- Performance comparison data",
+        "variables": [
+          "language",
+          "algorithm_type",
+          "problem_description",
+          "input_constraints",
+          "output_requirements",
+          "performance_targets",
+          "memory_constraints",
+          "special_requirements"
+        ]
+      }
+    },
+    "api_development": {
+      "api_design": {
+        "title": "RESTful API Design",
+        "description": "Design and implement RESTful APIs",
+        "prompt": "You are a backend API architect specializing in {technology_stack}. Design a RESTful API for {api_purpose}.\n\nAPI Requirements:\n- Resources: {resources}\n- Operations: {operations}\n- Authentication: {auth_method}\n- Data format: {data_format}\n- Rate limiting: {rate_limits}\n- Versioning strategy: {versioning}\n\nDesign specifications:\n1. **API Structure:**\n   - Endpoint design following RESTful principles\n   - HTTP methods and status codes\n   - Request/response schemas\n   - Error handling patterns\n\n2. **Security Implementation:**\n   - Authentication and authorization\n   - Input validation and sanitization\n   - Rate limiting and throttling\n   - CORS configuration\n\n3. **Documentation:**\n   - OpenAPI/Swagger specification\n   - Example requests and responses\n   - Error codes and messages\n   - Authentication flow\n\n4. **Implementation:**\n   - Complete server-side code\n   - Database integration\n   - Middleware configuration\n   - Testing endpoints\n\nProvide complete API implementation with proper error handling, validation, and security measures.",
+        "variables": [
+          "technology_stack",
+          "api_purpose",
+          "resources",
+          "operations",
+          "auth_method",
+          "data_format",
+          "rate_limits",
+          "versioning"
+        ]
+      }
+    },
+    "architecture": {
+      "system_design": {
+        "title": "System Architecture Design",
+        "description": "Design system architecture from requirements",
+        "prompt": "You are a senior software architect. Design a system architecture for {project_type}.\n\nRequirements:\n- Functional requirements: {functional_reqs}\n- Non-functional requirements: {non_functional_reqs}\n- Scale: {scale_requirements}\n- Budget constraints: {budget_constraints}\n- Timeline: {timeline}\n- Team expertise: {team_skills}\n- Technology preferences: {tech_preferences}\n\nDesign considerations:\n- Architecture patterns (microservices, monolith, serverless, etc.)\n- Database design and data flow\n- API design and integration points\n- Security architecture\n- Scalability and performance strategies\n- Deployment and DevOps approach\n- Monitoring and observability\n- Error handling and resilience\n\nPlease provide:\n1. High-level architecture diagram description\n2. Component breakdown with responsibilities\n3. Technology stack recommendations with rationale\n4. Data flow and API specifications\n5. Security and compliance measures\n6. Scalability and performance strategy\n7. Deployment architecture\n8. Risk assessment and mitigation strategies\n9. Development phases and milestones\n10. Alternative approaches considered",
+        "variables": [
+          "project_type",
+          "functional_reqs",
+          "non_functional_reqs",
+          "scale_requirements",
+          "budget_constraints",
+          "timeline",
+          "team_skills",
+          "tech_preferences"
+        ]
+      }
+    },
+    "code_generation": {
+      "basic_function": {
+        "title": "Basic Function Generator",
+        "description": "Generate a function with specific requirements",
+        "prompt": "You are an expert {language} developer. I need you to create a {type} function that {description}.\n\nRequirements:\n- {requirements}\n- Follow {language} best practices\n- Include proper error handling\n- Add comprehensive comments explaining the logic\n- Consider edge cases such as {edge_cases}\n- Optimize for {optimization_focus}\n\nPlease provide:\n1. The complete function with clear variable names\n2. Usage examples with different scenarios\n3. Brief explanation of the approach used\n\nFunction specifications:\n{specifications}",
+        "example": "You are an expert Python developer. I need you to create a utility function that calculates compound interest.\n\nRequirements:\n- Accept principal amount, annual interest rate, number of years, and compounding frequency\n- Follow Python best practices\n- Include proper error handling\n- Add comprehensive comments explaining the logic\n- Consider edge cases such as negative values, zero inputs, and very large numbers\n- Optimize for readability and accuracy\n\nPlease provide:\n1. The complete function with clear variable names\n2. Usage examples with different scenarios\n3. Brief explanation of the approach used\n\nFunction specifications:\n- Function name: calculate_compound_interest\n- Parameters: principal (float), rate (float), years (int), compounds_per_year (int)\n- Return: final amount and interest earned as a tuple",
+        "variables": [
+          "language",
+          "type",
+          "description",
+          "requirements",
+          "edge_cases",
+          "optimization_focus",
+          "specifications"
+        ]
+      },
+      "class_generator": {
+        "title": "Class/Object Generator",
+        "description": "Generate classes with methods and properties",
+        "prompt": "Act as a senior {language} developer. Create a {class_type} class named {class_name} that {purpose}.\n\nClass Requirements:\n- Properties: {properties}\n- Methods: {methods}\n- Inheritance: {inheritance}\n- Design patterns: {patterns}\n- Access modifiers: Use appropriate visibility (private, protected, public)\n\nAdditional specifications:\n- Include constructor/initializer with parameter validation\n- Implement proper encapsulation\n- Add docstrings/comments for all public methods\n- Consider thread safety if applicable\n- Follow SOLID principles\n- Include error handling for invalid operations\n\nPlease provide:\n1. Complete class implementation\n2. Usage examples demonstrating all features\n3. Unit test examples\n4. Brief architectural explanation",
+        "example": "Act as a senior Python developer. Create a data structure class named BankAccount that manages bank account operations.\n\nClass Requirements:\n- Properties: account_number, balance, account_type, owner_name\n- Methods: deposit, withdraw, get_balance, transfer, get_statement\n- Inheritance: None (standalone class)\n- Design patterns: None required\n- Access modifiers: Use appropriate visibility (private, protected, public)\n\nAdditional specifications:\n- Include constructor/initializer with parameter validation\n- Implement proper encapsulation\n- Add docstrings/comments for all public methods\n- Consider thread safety if applicable\n- Follow SOLID principles\n- Include error handling for invalid operations",
+        "variables": [
+          "language",
+          "class_type",
+          "class_name",
+          "purpose",
+          "properties",
+          "methods",
+          "inheritance",
+          "patterns"
+        ]
+      },
+      "api_endpoint": {
+        "title": "API Endpoint Generator",
+        "description": "Generate REST API endpoints with proper structure",
+        "prompt": "You are a backend developer specializing in {framework}. Create a {method} API endpoint for {purpose}.\n\nEndpoint Specifications:\n- Route: {route}\n- HTTP Method: {method}\n- Request body: {request_format}\n- Response format: {response_format}\n- Authentication: {auth_type}\n- Validation: {validation_rules}\n\nRequirements:\n- Implement proper error handling with meaningful HTTP status codes\n- Include input validation and sanitization\n- Add comprehensive logging for debugging\n- Follow RESTful conventions\n- Include rate limiting considerations\n- Implement proper security measures\n- Add API documentation comments\n\nPlease provide:\n1. Complete endpoint implementation\n2. Request/response examples\n3. Error handling scenarios\n4. Security considerations\n5. Testing approach",
+        "example": "You are a backend developer specializing in Flask/Python. Create a POST API endpoint for user registration.\n\nEndpoint Specifications:\n- Route: /api/v1/users/register\n- HTTP Method: POST\n- Request body: JSON with username, email, password\n- Response format: JSON with user_id, success message, or error details\n- Authentication: None (public endpoint)\n- Validation: Email format, password strength, username uniqueness\n\nRequirements:\n- Implement proper error handling with meaningful HTTP status codes\n- Include input validation and sanitization\n- Add comprehensive logging for debugging\n- Follow RESTful conventions\n- Include rate limiting considerations\n- Implement proper security measures\n- Add API documentation comments",
+        "variables": [
+          "framework",
+          "method",
+          "purpose",
+          "route",
+          "request_format",
+          "response_format",
+          "auth_type",
+          "validation_rules"
+        ]
+      }
+    },
+    "code_review": {
+      "comprehensive_review": {
+        "title": "Comprehensive Code Review",
+        "description": "Complete code review covering all aspects of code quality",
+        "prompt": "Act as a senior code reviewer and {language} expert. Please conduct a thorough code review of the following code.\n\nCode to review:\n{code_snippet}\n\nContext:\n- Purpose: {code_purpose}\n- Target environment: {environment}\n- Performance requirements: {performance_reqs}\n- Team coding standards: {coding_standards}\n- Project phase: {project_phase}\n\nReview criteria - please analyze each area:\n\n**1. Code Quality & Style:**\n- Naming conventions and clarity\n- Code organization and structure\n- Commenting and documentation\n- Adherence to language conventions\n\n**2. Functionality & Logic:**\n- Correctness of implementation\n- Edge case handling\n- Error handling completeness\n- Business logic accuracy\n\n**3. Performance & Efficiency:**\n- Algorithm efficiency\n- Memory usage\n- I/O operations optimization\n- Scalability considerations\n\n**4. Security:**\n- Input validation and sanitization\n- Authentication and authorization\n- Data protection measures\n- Vulnerability assessments\n\n**5. Maintainability:**\n- Code modularity and reusability\n- Dependency management\n- Testing considerations\n- Future modification ease\n\n**6. Best Practices:**\n- Design pattern usage\n- SOLID principles adherence\n- Framework-specific best practices\n- Industry standards compliance\n\nPlease provide:\n1. Overall assessment score (1-10)\n2. Detailed findings for each area\n3. Specific recommendations with examples\n4. Priority ranking of issues (Critical/High/Medium/Low)\n5. Refactored code examples for major issues\n6. Positive aspects worth highlighting",
+        "example": "Act as a senior code reviewer and Python expert. Please conduct a thorough code review of the following code.\n\nCode to review:\n```python\ndef process_orders(orders):\n    processed = []\n    for o in orders:\n        if o['status'] == 'pending':\n            o['total'] = o['quantity'] * o['price']\n            if o['total'] > 100:\n                o['discount'] = o['total'] * 0.1\n            processed.append(o)\n    return processed\n```\n\nContext:\n- Purpose: Process pending orders and calculate totals with discounts\n- Target environment: Production web application\n- Performance requirements: Handle up to 10,000 orders per batch\n- Team coding standards: PEP 8, type hints required, full documentation\n- Project phase: About to deploy to production\n\nReview criteria - please analyze each area: [continues with all review areas]",
+        "variables": [
+          "language",
+          "code_snippet",
+          "code_purpose",
+          "environment",
+          "performance_reqs",
+          "coding_standards",
+          "project_phase"
+        ]
+      },
+      "security_review": {
+        "title": "Security-Focused Code Review",
+        "description": "Specialized review focusing on security vulnerabilities",
+        "prompt": "You are a cybersecurity expert specializing in secure {language} development. Perform a security-focused code review on the following code.\n\nCode for security analysis:\n{code_snippet}\n\nSecurity context:\n- Application type: {app_type}\n- Data sensitivity level: {data_sensitivity}\n- User access level: {user_access}\n- Network exposure: {network_exposure}\n- Compliance requirements: {compliance_reqs}\n\nSecurity review checklist:\n\n**Input Validation & Sanitization:**\n- User input validation\n- SQL injection prevention\n- XSS prevention\n- Command injection protection\n- Path traversal prevention\n\n**Authentication & Authorization:**\n- Authentication mechanisms\n- Session management\n- Access control implementation\n- Privilege escalation risks\n\n**Data Protection:**\n- Sensitive data handling\n- Encryption implementation\n- Data transmission security\n- Storage security measures\n\n**Error Handling:**\n- Information disclosure in errors\n- Logging security considerations\n- Exception handling security\n\n**Configuration & Dependencies:**\n- Secure configuration practices\n- Third-party library vulnerabilities\n- Environment variable handling\n- Secret management\n\n**Common Vulnerabilities:**\n- OWASP Top 10 compliance\n- Race conditions\n- Buffer overflows (if applicable)\n- Cryptographic issues\n\nProvide:\n1. Vulnerability assessment (Critical/High/Medium/Low)\n2. Specific security issues found\n3. Exploit scenarios for each issue\n4. Remediation steps with secure code examples\n5. Security best practices recommendations\n6. Compliance gaps (if any)\n7. Security testing recommendations",
+        "example": "You are a cybersecurity expert specializing in secure Python development. Perform a security-focused code review on the following code.\n\nCode for security analysis:\n```python\nimport sqlite3\nfrom flask import request, jsonify\n\ndef get_user_data():\n    user_id = request.args.get('id')\n    conn = sqlite3.connect('users.db')\n    query = f\"SELECT * FROM users WHERE id = {user_id}\"\n    cursor = conn.execute(query)\n    result = cursor.fetchone()\n    conn.close()\n    return jsonify(result)\n```\n\nSecurity context:\n- Application type: Web API handling user data\n- Data sensitivity level: PII (Personally Identifiable Information)\n- User access level: Public endpoint, authentication required\n- Network exposure: Internet-facing API\n- Compliance requirements: GDPR, SOC 2",
+        "variables": [
+          "language",
+          "code_snippet",
+          "app_type",
+          "data_sensitivity",
+          "user_access",
+          "network_exposure",
+          "compliance_reqs"
+        ]
+      },
+      "architecture_review": {
+        "title": "Architecture and Design Review",
+        "description": "Review code from architectural and design perspective",
+        "prompt": "You are a software architect and {language} expert. Please review this code from an architectural and design perspective.\n\nCode/component to review:\n{code_snippet}\n\nArchitectural context:\n- System role: {system_role}\n- Integration points: {integrations}\n- Scalability requirements: {scalability_needs}\n- Architecture pattern: {architecture_pattern}\n- Design constraints: {design_constraints}\n- Team size and structure: {team_context}\n\nArchitecture review areas:\n\n**Design Principles:**\n- SOLID principles adherence\n- DRY (Don't Repeat Yourself) compliance\n- KISS (Keep It Simple, Stupid) principle\n- Separation of concerns\n- Loose coupling, high cohesion\n\n**Structural Analysis:**\n- Component responsibilities clarity\n- Abstraction levels appropriateness\n- Interface design quality\n- Dependency relationships\n- Module organization\n\n**Scalability & Performance:**\n- Horizontal scaling readiness\n- Vertical scaling considerations\n- Performance bottleneck identification\n- Resource utilization efficiency\n- Caching strategy implementation\n\n**Maintainability:**\n- Code complexity assessment\n- Testing strategy alignment\n- Documentation completeness\n- Refactoring ease\n- Technical debt identification\n\n**Integration Design:**\n- API design quality\n- Error propagation handling\n- Transaction management\n- Data consistency approaches\n- Communication patterns\n\n**Future-Proofing:**\n- Extensibility considerations\n- Technology evolution readiness\n- Migration path planning\n- Backward compatibility\n\nProvide:\n1. Architectural assessment summary\n2. Design principle compliance analysis\n3. Scalability and performance evaluation\n4. Maintainability score and rationale\n5. Integration quality assessment\n6. Recommended improvements with rationale\n7. Alternative architectural approaches\n8. Migration/refactoring roadmap (if needed)",
+        "example": "You are a software architect and Java expert. Please review this code from an architectural and design perspective.\n\nCode/component to review:\n```java\npublic class OrderService {\n    private DatabaseConnection db;\n    private PaymentProcessor payment;\n    private EmailService emailService;\n    \n    public void processOrder(Order order) {\n        // Validate order\n        if (order.getItems().isEmpty()) {\n            throw new IllegalArgumentException(\"Order must have items\");\n        }\n        \n        // Calculate total\n        double total = 0;\n        for (OrderItem item : order.getItems()) {\n            total += item.getPrice() * item.getQuantity();\n        }\n        \n        // Process payment\n        PaymentResult result = payment.charge(order.getCustomer().getCreditCard(), total);\n        \n        // Save to database\n        order.setStatus(OrderStatus.PAID);\n        db.save(order);\n        \n        // Send confirmation\n        emailService.sendConfirmation(order.getCustomer().getEmail(), order);\n    }\n}\n```\n\nArchitectural context:\n- System role: Core business logic component in e-commerce platform\n- Integration points: Database, payment gateway, email service\n- Scalability requirements: Handle 10,000+ orders/hour during peak\n- Architecture pattern: Microservices with domain-driven design\n- Design constraints: Must maintain ACID properties for financial transactions\n- Team size and structure: 5-person team using agile development",
+        "variables": [
+          "language",
+          "code_snippet",
+          "system_role",
+          "integrations",
+          "scalability_needs",
+          "architecture_pattern",
+          "design_constraints",
+          "team_context"
+        ]
+      }
+    },
+    "database": {
+      "database_design": {
+        "title": "Database Design and Optimization",
+        "description": "Design efficient database schemas and queries",
+        "prompt": "You are a database architect specializing in {database_type}. Help me design/optimize database solutions for {project_context}.\n\nDatabase requirements:\n- Data entities: {entities}\n- Relationships: {relationships}\n- Performance requirements: {performance_needs}\n- Scale: {scale_requirements}\n- Consistency requirements: {consistency_needs}\n\nDesign areas:\n1. **Schema Design:**\n   - Table structure and normalization\n   - Primary and foreign keys\n   - Indexes and constraints\n   - Data types optimization\n\n2. **Query Optimization:**\n   - Efficient query patterns\n   - Index strategy\n   - Performance tuning\n   - Execution plan analysis\n\n3. **Scalability:**\n   - Partitioning strategies\n   - Replication setup\n   - Sharding considerations\n   - Caching layers\n\n4. **Security:**\n   - Access control and permissions\n   - Data encryption\n   - Audit logging\n   - Backup and recovery\n\nProvide:\n- Complete schema design with SQL\n- Optimized queries with explanations\n- Performance benchmarking approach\n- Migration scripts if needed\n- Best practices specific to {database_type}",
+        "variables": [
+          "database_type",
+          "project_context",
+          "entities",
+          "relationships",
+          "performance_needs",
+          "scale_requirements",
+          "consistency_needs"
+        ]
+      }
+    },
+    "debugging": {
+      "general_debug": {
+        "title": "General Code Debugging",
+        "description": "Debug code with specific error messages or unexpected behavior",
+        "prompt": "You are an expert debugger and {language} developer. I'm experiencing {issue_type} with my code.\n\nProblem Description:\n- Expected behavior: {expected_behavior}\n- Actual behavior: {actual_behavior}\n- Error message (if any): {error_message}\n- Environment: {environment_details}\n\nCode to debug:\n{code_snippet}\n\nContext and constraints:\n- {context_information}\n- This code is part of: {project_context}\n- Dependencies/libraries used: {dependencies}\n\nPlease help me:\n1. Identify the root cause of the issue\n2. Explain why this problem occurs\n3. Provide a corrected version of the code\n4. Suggest preventive measures to avoid similar issues\n5. Recommend debugging techniques for this type of problem\n6. Highlight any potential related issues I should watch for\n\nAdditional analysis:\n- Are there any performance implications?\n- Security considerations?\n- Best practices violations?",
+        "example": "You are an expert debugger and Python developer. I'm experiencing a runtime error with my code.\n\nProblem Description:\n- Expected behavior: Function should return the average of a list of numbers\n- Actual behavior: Getting \"TypeError: unsupported operand type(s) for +: 'int' and 'str'\"\n- Error message (if any): TypeError: unsupported operand type(s) for +: 'int' and 'str'\n- Environment: Python 3.9, running in local development environment\n\nCode to debug:\n```python\ndef calculate_average(numbers):\n    total = 0\n    for num in numbers:\n        total += num\n    return total / len(numbers)\n\n# Test data\ndata = [1, 2, \"3\", 4, 5]\nresult = calculate_average(data)\nprint(result)\n```\n\nContext and constraints:\n- Data comes from user input via a web form\n- This code is part of: A data analysis web application\n- Dependencies/libraries used: Flask, NumPy",
+        "variables": [
+          "language",
+          "issue_type",
+          "expected_behavior",
+          "actual_behavior",
+          "error_message",
+          "environment_details",
+          "code_snippet",
+          "context_information",
+          "project_context",
+          "dependencies"
+        ]
+      },
+      "performance_debug": {
+        "title": "Performance Issue Debugging",
+        "description": "Debug performance bottlenecks and optimization issues",
+        "prompt": "Act as a performance optimization expert for {language}. I'm experiencing performance issues with my code.\n\nPerformance Problem:\n- Current performance: {current_performance}\n- Expected/target performance: {target_performance}\n- Bottleneck symptoms: {symptoms}\n- Testing methodology: {test_conditions}\n- Hardware/environment: {system_specs}\n\nCode with performance issues:\n{code_snippet}\n\nAdditional context:\n- Input data characteristics: {data_characteristics}\n- Frequency of execution: {execution_frequency}\n- Memory constraints: {memory_limits}\n- Concurrency requirements: {concurrency_needs}\n\nPlease analyze and provide:\n1. Performance bottleneck identification\n2. Root cause analysis with measurements\n3. Optimized code solution\n4. Performance comparison (before/after estimates)\n5. Alternative approaches to consider\n6. Profiling recommendations\n7. Monitoring suggestions for production\n8. Scalability considerations\n\nFocus areas:\n- Time complexity analysis\n- Memory usage optimization\n- I/O efficiency\n- Algorithm improvements\n- Data structure optimization",
+        "example": "Act as a performance optimization expert for Python. I'm experiencing performance issues with my code.\n\nPerformance Problem:\n- Current performance: Processing 10,000 records takes 45 seconds\n- Expected/target performance: Should complete in under 5 seconds\n- Bottleneck symptoms: High CPU usage, script becomes unresponsive\n- Testing methodology: Processing CSV file with user data\n- Hardware/environment: 8GB RAM, Intel i5, Python 3.9\n\nCode with performance issues:\n```python\ndef process_user_data(filename):\n    results = []\n    with open(filename, 'r') as f:\n        lines = f.readlines()\n        for line in lines:\n            data = line.strip().split(',')\n            # Complex calculation for each user\n            score = calculate_user_score(data)\n            results.append(score)\n    return results\n\ndef calculate_user_score(user_data):\n    # Multiple nested loops and database queries\n    total_score = 0\n    for i in range(len(user_data)):\n        for j in range(len(user_data)):\n            if i != j:\n                total_score += complex_calculation(user_data[i], user_data[j])\n    return total_score\n```\n\nAdditional context:\n- Input data characteristics: CSV files ranging from 5,000 to 50,000 rows\n- Frequency of execution: Multiple times per day\n- Memory constraints: 8GB available\n- Concurrency requirements: Single-threaded acceptable",
+        "variables": [
+          "language",
+          "current_performance",
+          "target_performance",
+          "symptoms",
+          "test_conditions",
+          "system_specs",
+          "code_snippet",
+          "data_characteristics",
+          "execution_frequency",
+          "memory_limits",
+          "concurrency_needs"
+        ]
+      },
+      "logic_debug": {
+        "title": "Logic Error Debugging",
+        "description": "Debug logical errors and incorrect program behavior",
+        "prompt": "You are a logic analysis expert specializing in {language}. I have a logic error in my code that's producing incorrect results.\n\nLogic Problem Analysis:\n- Function/module purpose: {purpose}\n- Expected logic flow: {expected_logic}\n- Current incorrect behavior: {incorrect_behavior}\n- Test cases that fail: {failing_tests}\n- Test cases that pass: {passing_tests}\n\nCode with logic error:\n{code_snippet}\n\nBusiness/domain context:\n- Business rules: {business_rules}\n- Edge cases to consider: {edge_cases}\n- Input constraints: {input_constraints}\n- Output requirements: {output_requirements}\n\nPlease provide:\n1. Step-by-step trace of current logic execution\n2. Identification of where logic deviates from requirements\n3. Corrected logic with detailed explanation\n4. Additional test cases to verify the fix\n5. Suggestions to prevent similar logic errors\n6. Code review checklist for this type of logic\n\nAnalysis approach:\n- Trace through the algorithm step by step\n- Identify assumption errors\n- Check boundary conditions\n- Verify mathematical formulas\n- Validate business rule implementation",
+        "example": "You are a logic analysis expert specializing in JavaScript. I have a logic error in my code that's producing incorrect results.\n\nLogic Problem Analysis:\n- Function/module purpose: Calculate discount for customer orders\n- Expected logic flow: Apply percentage discount based on order value tiers\n- Current incorrect behavior: Some customers getting wrong discount amounts\n- Test cases that fail: Orders between $100-200 getting 5% instead of 10%\n- Test cases that pass: Orders under $100 and over $500\n\nCode with logic error:\n```javascript\nfunction calculateDiscount(orderValue, customerType) {\n    let discount = 0;\n    \n    if (orderValue > 100) {\n        discount = 0.05; // 5%\n    } else if (orderValue > 200) {\n        discount = 0.10; // 10%\n    } else if (orderValue > 500) {\n        discount = 0.15; // 15%\n    }\n    \n    if (customerType === 'premium') {\n        discount += 0.05;\n    }\n    \n    return orderValue * discount;\n}\n```\n\nBusiness/domain context:\n- Business rules: Tiered discounts: 5% for $100+, 10% for $200+, 15% for $500+\n- Edge cases to consider: Zero orders, negative values, premium customers\n- Input constraints: orderValue >= 0, customerType in ['regular', 'premium']\n- Output requirements: Discount amount (not percentage)",
+        "variables": [
+          "language",
+          "purpose",
+          "expected_logic",
+          "incorrect_behavior",
+          "failing_tests",
+          "passing_tests",
+          "code_snippet",
+          "business_rules",
+          "edge_cases",
+          "input_constraints",
+          "output_requirements"
+        ]
+      }
+    },
+    "deployment": {
+      "deployment_automation": {
+        "title": "Deployment and DevOps Automation",
+        "description": "Automate deployment pipelines and infrastructure",
+        "prompt": "You are a DevOps engineer specializing in {platform}. Create a deployment solution for {application_type}.\n\nDeployment requirements:\n- Target environment: {target_environment}\n- Scalability needs: {scaling_requirements}\n- Availability requirements: {availability_sla}\n- Security compliance: {security_requirements}\n- Budget constraints: {budget_limits}\n\nImplementation areas:\n1. **Infrastructure as Code:**\n   - Infrastructure provisioning scripts\n   - Configuration management\n   - Environment consistency\n   - Resource optimization\n\n2. **CI/CD Pipeline:**\n   - Build automation\n   - Testing integration\n   - Deployment stages\n   - Rollback strategies\n\n3. **Monitoring and Logging:**\n   - Application monitoring\n   - Infrastructure monitoring\n   - Log aggregation\n   - Alerting configuration\n\n4. **Security and Compliance:**\n   - Security scanning integration\n   - Secret management\n   - Compliance validation\n   - Access control\n\nProvide:\n- Complete deployment pipeline configuration\n- Infrastructure provisioning scripts\n- Monitoring and alerting setup\n- Security and compliance measures\n- Troubleshooting guides",
+        "variables": [
+          "platform",
+          "application_type",
+          "target_environment",
+          "scaling_requirements",
+          "availability_sla",
+          "security_requirements",
+          "budget_limits"
+        ]
+      }
+    },
+    "documentation": {
+      "code_documentation": {
+        "title": "Code Documentation Generator",
+        "description": "Generate comprehensive code documentation",
+        "prompt": "You are a technical documentation expert for {language}. Create comprehensive documentation for the following code.\n\nCode to document:\n{code_snippet}\n\nDocumentation requirements:\n- Target audience: {target_audience}\n- Documentation type: {doc_type}\n- Detail level: {detail_level}\n- Include examples: {include_examples}\n- Format: {output_format}\n\nDocumentation structure:\n1. **Overview:**\n   - Purpose and functionality\n   - High-level architecture\n   - Key features and capabilities\n   - Dependencies and requirements\n\n2. **API Documentation:**\n   - Function/method signatures\n   - Parameter descriptions\n   - Return value specifications\n   - Exception handling\n\n3. **Usage Examples:**\n   - Basic usage scenarios\n   - Advanced use cases\n   - Best practice examples\n   - Common pitfalls and solutions\n\n4. **Technical Details:**\n   - Implementation notes\n   - Performance considerations\n   - Configuration options\n   - Troubleshooting guide\n\n5. **Maintenance:**\n   - Version history\n   - Known limitations\n   - Future enhancements\n   - Contributing guidelines\n\nGenerate documentation that is:\n- Clear and concise\n- Technically accurate\n- Well-structured and navigable\n- Include appropriate code examples\n- Follow {language} documentation standards",
+        "variables": [
+          "language",
+          "code_snippet",
+          "target_audience",
+          "doc_type",
+          "detail_level",
+          "include_examples",
+          "output_format"
+        ]
+      }
+    },
+    "frameworks": {
+      "framework_integration": {
+        "title": "Framework Integration Helper",
+        "description": "Integrate and work with specific frameworks",
+        "prompt": "You are a {framework} expert developer. Help me {task_type} using {framework}.\n\nRequirements:\n- Framework version: {framework_version}\n- Integration needs: {integration_requirements}\n- Performance considerations: {performance_needs}\n- Best practices: Follow {framework} conventions and patterns\n\nTask details:\n{task_description}\n\nPlease provide:\n1. Step-by-step implementation guide\n2. Complete code examples with explanations\n3. Configuration setup if needed\n4. Error handling and validation\n5. Testing approach\n6. Performance optimization tips\n7. Security considerations specific to {framework}\n8. Documentation and comments\n9. Common pitfalls to avoid\n10. Alternative approaches if applicable",
+        "variables": [
+          "framework",
+          "task_type",
+          "framework_version",
+          "integration_requirements",
+          "performance_needs",
+          "task_description"
+        ]
+      }
+    },
+    "learning": {
+      "concept_explanation": {
+        "title": "Programming Concept Explanation",
+        "description": "Explain complex programming concepts with examples",
+        "prompt": "You are an expert programming instructor specializing in {language}. Explain the concept of {concept} to a {audience_level} audience.\n\nLearning objectives:\n- Understand what {concept} is and why it's important\n- Learn how to implement {concept} in {language}\n- Recognize when and where to use {concept}\n- Avoid common pitfalls and mistakes\n\nTeaching approach:\n1. **Conceptual Foundation:**\n   - Clear definition and explanation\n   - Real-world analogies\n   - Problem it solves\n   - Benefits and limitations\n\n2. **Practical Implementation:**\n   - Step-by-step code examples\n   - Multiple implementation approaches\n   - Best practices and conventions\n   - Common patterns and variations\n\n3. **Hands-on Examples:**\n   - Simple example for understanding\n   - Intermediate example for practice\n   - Advanced example for mastery\n   - Real-world application scenarios\n\n4. **Common Pitfalls:**\n   - Typical mistakes beginners make\n   - How to avoid these mistakes\n   - Debugging tips\n   - Performance considerations\n\n5. **Practice Exercises:**\n   - Guided exercises with solutions\n   - Challenge problems\n   - Project ideas for further learning\n\nStructure the explanation progressively from basic to advanced concepts.",
+        "variables": [
+          "language",
+          "concept",
+          "audience_level"
+        ]
+      }
+    },
+    "performance": {
+      "optimization_analysis": {
+        "title": "Performance Optimization Analysis",
+        "description": "Analyze and optimize code performance",
+        "prompt": "You are a performance optimization expert specializing in {language}. Analyze and optimize the following code for better performance.\n\nCode to optimize:\n{code_snippet}\n\nPerformance context:\n- Current performance metrics: {current_metrics}\n- Performance targets: {target_metrics}\n- Usage patterns: {usage_patterns}\n- System constraints: {system_constraints}\n- Scalability requirements: {scalability_needs}\n\nAnalysis areas:\n1. **Algorithm Efficiency:**\n   - Time complexity analysis\n   - Space complexity evaluation\n   - Algorithm selection optimization\n   - Data structure improvements\n\n2. **System-Level Optimization:**\n   - Memory usage patterns\n   - I/O operation efficiency\n   - CPU utilization optimization\n   - Caching strategies\n\n3. **Language-Specific Optimization:**\n   - {language}-specific performance patterns\n   - Compiler/interpreter optimizations\n   - Framework performance features\n   - Library selection impact\n\n4. **Scalability Considerations:**\n   - Horizontal scaling readiness\n   - Concurrency and parallelization\n   - Load distribution strategies\n   - Resource pooling approaches\n\nProvide:\n- Performance bottleneck identification\n- Optimized code implementations\n- Performance improvement estimates\n- Profiling and monitoring recommendations\n- Scalability enhancement strategies",
+        "variables": [
+          "language",
+          "code_snippet",
+          "current_metrics",
+          "target_metrics",
+          "usage_patterns",
+          "system_constraints",
+          "scalability_needs"
+        ]
+      }
+    },
+    "refactoring": {
+      "code_refactoring": {
+        "title": "Code Refactoring and Modernization",
+        "description": "Refactor legacy code for better maintainability",
+        "prompt": "You are a refactoring expert specializing in {language}. Refactor the following legacy code to modern standards.\n\nCode to refactor:\n{legacy_code}\n\nRefactoring goals:\n- Target standards: {target_standards}\n- Performance improvements: {performance_goals}\n- Maintainability enhancements: {maintainability_goals}\n- Security updates: {security_requirements}\n- Framework migration: {framework_changes}\n\nRefactoring approach:\n1. **Code Quality Improvements:**\n   - Clean code principles application\n   - Design pattern implementation\n   - SOLID principles adherence\n   - Code smell elimination\n\n2. **Modernization:**\n   - Language feature utilization\n   - Framework updates\n   - Library replacements\n   - API modernization\n\n3. **Performance Optimization:**\n   - Algorithm improvements\n   - Data structure optimization\n   - Memory usage reduction\n   - I/O operation enhancement\n\n4. **Security Enhancement:**\n   - Vulnerability remediation\n   - Security pattern implementation\n   - Input validation improvement\n   - Authentication/authorization updates\n\nProvide:\n- Refactored code with detailed explanations\n- Migration strategy and steps\n- Before/after comparison analysis\n- Testing approach for refactored code\n- Risk assessment and mitigation",
+        "variables": [
+          "language",
+          "legacy_code",
+          "target_standards",
+          "performance_goals",
+          "maintainability_goals",
+          "security_requirements",
+          "framework_changes"
+        ]
+      }
+    },
+    "security": {
+      "security_audit": {
+        "title": "Security Audit and Vulnerability Assessment",
+        "description": "Comprehensive security analysis of code",
+        "prompt": "You are a cybersecurity expert conducting a security audit for {application_type} built in {language}.\n\nCode/System to audit:\n{code_snippet}\n\nSecurity assessment scope:\n- OWASP Top 10 compliance\n- Data protection (GDPR, HIPAA, etc.): {compliance_reqs}\n- Authentication and authorization\n- Input validation and sanitization\n- Cryptographic implementation\n- Session management\n- Error handling and logging\n- Configuration security\n- Dependency vulnerabilities\n\nProvide comprehensive analysis:\n1. **Vulnerability Assessment:**\n   - Critical vulnerabilities found\n   - Risk level classification\n   - Exploitation potential\n   - Business impact assessment\n\n2. **Security Recommendations:**\n   - Immediate fixes required\n   - Long-term security improvements\n   - Best practices implementation\n   - Security testing strategies\n\n3. **Compliance Analysis:**\n   - Regulatory compliance gaps\n   - Industry standard adherence\n   - Certification requirements\n\n4. **Secure Code Examples:**\n   - Fixed versions of vulnerable code\n   - Security pattern implementations\n   - Configuration hardening examples",
+        "variables": [
+          "application_type",
+          "language",
+          "code_snippet",
+          "compliance_reqs"
+        ]
+      }
+    },
+    "testing": {
+      "test_generation": {
+        "title": "Test Case Generator",
+        "description": "Generate comprehensive test cases for code",
+        "prompt": "You are a QA engineer and testing expert for {language}. Generate comprehensive test cases for the following code.\n\nCode to test:\n{code_snippet}\n\nTesting requirements:\n- Test types needed: {test_types}\n- Coverage requirements: {coverage_target}\n- Test framework: {test_framework}\n- Performance requirements: {performance_criteria}\n- Edge cases to consider: {edge_cases}\n\nGenerate:\n1. **Unit Tests:**\n   - Happy path scenarios\n   - Edge cases and boundary conditions\n   - Error conditions and exception handling\n   - Mock/stub requirements\n\n2. **Integration Tests:**\n   - Component interaction testing\n   - Database integration (if applicable)\n   - External service integration\n   - End-to-end workflows\n\n3. **Performance Tests:**\n   - Load testing scenarios\n   - Stress testing conditions\n   - Memory usage validation\n   - Response time requirements\n\n4. **Security Tests:**\n   - Input validation testing\n   - Authentication/authorization tests\n   - Data protection validation\n\nProvide complete test code with:\n- Test setup and teardown\n- Assertions and validations\n- Test data management\n- Mocking strategies\n- Coverage analysis recommendations",
+        "variables": [
+          "language",
+          "code_snippet",
+          "test_types",
+          "coverage_target",
+          "test_framework",
+          "performance_criteria",
+          "edge_cases"
+        ]
+      }
+    }
+  }
+}
