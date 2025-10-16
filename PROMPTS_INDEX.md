@@ -5,7 +5,7 @@ Welcome to the comprehensive collection of AI programming prompts! This library 
 ## 📚 Browse Prompts by Category
 
 ### 🎯 **Code Creation & Generation**
-- [📝 Code Generation](./prompts/code-generation.md) - Generate functions, classes, and APIs
+- [📝 Code Generation](code-generation.md) - Generate functions, classes, and APIs
 - [🏗️ Architecture Design](./prompts/architecture.md) - System design and patterns
 - [🔧 API Development](./prompts/api-development.md) - REST API design and integration
 
